@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07110d">
+  <meta name="description" content="القوانين الرسمية لسيرفر Libyan Embassy 3Q - مجتمع لعب أدوار واقعي.">
+  <title>القوانين | Libyan Embassy 3Q</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#060a08;--panel:#0b1410;--panel2:#0e1b14;--green:#20e078;--green2:#13a957;--text:#eef8f1;--muted:#9bb0a3;--line:rgba(32,224,120,.18);--warn:#f5c451}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:95px}
+    body{margin:0;background:radial-gradient(ellipse at 50% -15%,rgba(20,150,75,.2),transparent 48%),var(--bg);color:var(--text);font-family:'Cairo',system-ui,sans-serif;line-height:1.8}
+    a{color:inherit;text-decoration:none}
+    .topbar{position:sticky;top:0;z-index:10;background:rgba(6,10,8,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .nav{max-width:1120px;margin:auto;padding:13px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.2px}
+    .logo{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(145deg,var(--green),#08783c);color:#041009;font-weight:900;box-shadow:0 0 28px rgba(32,224,120,.2);direction:ltr}
+    .brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:2px;line-height:1.3}
+    .navlink{font-size:13px;color:var(--muted);border:1px solid var(--line);padding:7px 13px;border-radius:10px}
+    .hero{max-width:1000px;margin:0 auto;padding:72px 20px 40px;text-align:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:5px 13px;color:var(--green);font-size:12px;background:rgba(32,224,120,.05)}
+    .dot{width:7px;height:7px;background:var(--green);border-radius:50%;box-shadow:0 0 12px var(--green)}
+    h1{font-size:clamp(32px,6vw,58px);line-height:1.25;margin:20px 0 12px;font-weight:900;letter-spacing:-1px}
+    h1 span{color:var(--green)}
+    .intro{max-width:650px;margin:0 auto;color:var(--muted);font-size:15px}
+    .hero-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:26px}
+    .btn{border:1px solid var(--line);border-radius:12px;padding:10px 17px;font:inherit;font-size:13px;cursor:pointer;color:var(--text);background:var(--panel)}
+    .btn.primary{background:var(--green);color:#041009;border-color:var(--green);font-weight:800}
+    .layout{max-width:1120px;margin:25px auto 70px;padding:0 20px;display:grid;grid-template-columns:260px minmax(0,1fr);gap:22px;align-items:start}
+    aside{position:sticky;top:86px;border:1px solid var(--line);border-radius:18px;background:rgba(11,20,16,.86);padding:17px}
+    .aside-title{font-size:12px;color:var(--muted);margin:0 0 12px}
+    .search{width:100%;background:#060d09;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:11px 12px;font:inherit;font-size:13px;outline:none;margin-bottom:14px}
+    .search:focus{border-color:var(--green)}
+    .side-links{display:grid;gap:6px}
+    .side-links a{font-size:12px;padding:9px 10px;border-radius:9px;color:#c5d5cb;border:1px solid transparent}
+    .side-links a:hover,.side-links a.active{background:rgba(32,224,120,.08);border-color:var(--line);color:var(--green)}
+    .side-note{border-top:1px solid var(--line);margin-top:15px;padding-top:13px;color:var(--muted);font-size:11px}
+    main{min-width:0}
+    .section{border:1px solid var(--line);background:linear-gradient(145deg,rgba(14,27,20,.96),rgba(8,14,10,.96));border-radius:18px;padding:23px;margin-bottom:16px;scroll-margin-top:90px}
+    .section-head{display:flex;align-items:center;gap:12px;margin-bottom:15px}
+    .section-icon{flex:0 0 42px;width:42px;height:42px;display:grid;place-items:center;border:1px solid var(--line);border-radius:12px;color:var(--green);background:rgba(32,224,120,.06);font-size:18px;font-weight:900}
+    h2{font-size:19px;margin:0;font-weight:800}
+    .section-sub{color:var(--muted);font-size:11px;margin-top:1px}
+    .rule{display:grid;grid-template-columns:30px 1fr;gap:10px;padding:12px 0;border-top:1px solid rgba(255,255,255,.055)}
+    .num{width:27px;height:27px;border-radius:8px;background:rgba(32,224,120,.09);border:1px solid var(--line);color:var(--green);display:grid;place-items:center;font-size:11px;font-weight:800}
+    .rule p{margin:0;font-size:13px;color:#d5e3da}
+    .rule strong{color:#fff}
+    .notice{padding:13px 15px;border:1px solid rgba(245,196,81,.2);border-radius:12px;background:rgba(245,196,81,.045);color:#dfd2ad;font-size:12px;margin:0 0 16px}
+    .empty{display:none;text-align:center;padding:35px;color:var(--muted);border:1px dashed var(--line);border-radius:15px}
+    footer{border-top:1px solid var(--line);padding:25px 20px;text-align:center;color:var(--muted);font-size:11px}
+    footer strong{color:var(--green)}
+    .backtop{position:fixed;bottom:18px;left:18px;width:43px;height:43px;border-radius:13px;background:var(--green);color:#041009;border:0;font-size:20px;cursor:pointer;box-shadow:0 5px 25px rgba(32,224,120,.2)}
+    @media(max-width:800px){.layout{grid-template-columns:1fr;margin-top:10px}.hero{padding-top:48px}aside{position:static}.side-links{grid-template-columns:repeat(2,minmax(0,1fr))}.side-note{display:none}}
+    @media(max-width:480px){.nav{padding:10px 13px}.brand{font-size:12px}.logo{width:36px;height:36px}.navlink{font-size:11px;padding:6px 9px}.hero{padding-left:15px;padding-right:15px}.intro{font-size:13px}.layout{padding:0 12px}.section{padding:16px}.side-links{grid-template-columns:1fr 1fr}.rule{grid-template-columns:27px 1fr;gap:8px}.rule p{font-size:12px}h2{font-size:16px}}
+    @media print{.topbar,aside,.hero-actions,.backtop{display:none}.layout{display:block;max-width:none;margin:0}.section{break-inside:avoid;background:white;color:black;border:1px solid #bbb}.rule p{color:#222}.rule strong,h2{color:black}body{background:white;color:black}}
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <div class="nav">
+    <a class="brand" href="#top" aria-label="Libyan Embassy 3Q">
+      <span class="logo">3Q</span>
+      <span>LIBYAN EMBASSY <small>ROLEPLAY RULES</small></span>
+    </a>
+    <a class="navlink" href="#rules">قراءة القوانين ↓</a>
+  </div>
+</header>
+<section class="hero" id="top">
+  <div class="eyebrow"><span class="dot"></span> القوانين الرسمية للسيرفر</div>
+  <h1>LIBYAN EMBASSY <span>3Q</span></h1>
+  <p class="intro">مرحباً بك في سفارة ليبيا. اقرأ القوانين جيداً قبل دخول المدينة؛ وجودك داخل السيرفر يعني التزامك بالقواعد واحترامك للاعبين والإدارة.</p>
+  <div class="hero-actions">
+    <a class="btn primary" href="#rules">ابدأ قراءة القوانين</a>
+    <a class="btn" href="https://discord.gg/tC2xEPcv6" target="_blank" rel="noopener noreferrer">دخول سيرفر ديسكورد</a>
+    <button class="btn" onclick="window.print()">طباعة / حفظ PDF</button>
+  </div>
+</section>
+
+<div class="layout" id="rules">
+  <aside>
+    <p class="aside-title">دليل القوانين</p>
+    <input class="search" id="search" type="search" placeholder="ابحث عن قانون..." aria-label="ابحث عن قانون">
+    <nav class="side-links" id="sideLinks">
+      <a href="#general">01 — القوانين العامة</a>
+      <a href="#rp">02 — الحياة الواقعية RP</a>
+      <a href="#police">03 — الشرطة والمنظمات</a>
+      <a href="#crime">04 — الإجرام</a>
+      <a href="#cars">05 — السيارات والمطاردات</a>
+      <a href="#admin">06 — الإدارة والعقوبات</a>
+    </nav>
+    <div class="side-note">آخر تحديث: <span id="updated"></span><br>تأكد من متابعة الإعلانات لأي تعديل.</div>
+  </aside>
+
+  <main id="content">
+    <p class="notice"><strong>تنبيه:</strong> هذه لائحة مقترحة لسيرفر RP. يمكن للإدارة تعديلها، ويجب إعلان أي تغيير بوضوح قبل تطبيقه.</p>
+
+    <section class="section" id="general" data-section>
+      <div class="section-head"><div class="section-icon">01</div><div><h2>القوانين العامة</h2><div class="section-sub">أساس التعامل داخل المجتمع</div></div></div>
+      <div class="rule"><span class="num">01</span><p>يجب احترام جميع اللاعبين والإدارة، ويُمنع السبّ الشخصي أو التمييز أو التحرش أو الاستفزاز المتعمد.</p></div>
+      <div class="rule"><span class="num">02</span><p>يُمنع استغلال الثغرات أو الأخطاء البرمجية أو استخدام برامج الغش أو أي وسيلة تمنح أفضلية غير عادلة.</p></div>
+      <div class="rule"><span class="num">03</span><p>يُمنع انتحال شخصية لاعب آخر أو إداري، كما يُمنع تزوير الأدلة أو تقديم بلاغ كاذب عن قصد.</p></div>
+      <div class="rule"><span class="num">04</span><p>يُمنع الإزعاج المتكرر في الدردشة أو الصوت، أو التخريب المتعمد لتجربة الآخرين.</p></div>
+      <div class="rule"><span class="num">05</span><p>التزم بتعليمات المنصة وقواعد السيرفر، ولا تنشر بيانات شخصية أو معلومات خاصة عن أي شخص.</p></div>
+      <div class="rule"><span class="num">06</span><p>يُمنع استخدام الثغرات أو الاتفاقات الخارجية للحصول على أموال أو ممتلكات داخل اللعبة بصورة غير عادلة.</p></div>
+    </section>
+
+    <section class="section" id="rp" data-section>
+      <div class="section-head"><div class="section-icon">02</div><div><h2>قوانين الحياة الواقعية RP</h2><div class="section-sub">العب الشخصية بشكل منطقي وواقعي</div></div></div>
+      <div class="rule"><span class="num">01</span><p><strong>RDM:</strong> يُمنع الاعتداء على لاعب أو إسقاطه دون سبب واضح وسيناريو تمثيل أدوار منطقي.</p></div>
+      <div class="rule"><span class="num">02</span><p><strong>VDM:</strong> يُمنع استخدام المركبة لدهس اللاعبين عمداً دون مبرر داخل السيناريو.</p></div>
+      <div class="rule"><span class="num">03</span><p><strong>Meta Gaming:</strong> يُمنع استخدام معلومات عرفتها خارج اللعبة داخل الشخصية، مثل البث أو الرسائل الخارجية.</p></div>
+      <div class="rule"><span class="num">04</span><p><strong>Power Gaming:</strong> يُمنع فرض أفعال غير منطقية على الآخرين أو تنفيذ قدرات مستحيلة في الواقع دون إتاحة فرصة للرد.</p></div>
+      <div class="rule"><span class="num">05</span><p><strong>Fear RP:</strong> يجب إظهار الخوف الطبيعي عند التعرض لخطر جدي، والتصرف بما يناسب الموقف.</p></div>
+      <div class="rule"><span class="num">06</span><p><strong>Value of Life:</strong> حافظ على حياة شخصيتك؛ لا تخاطر بها دون سبب منطقي داخل السيناريو.</p></div>
+      <div class="rule"><span class="num">07</span><p><strong>Combat Logging:</strong> يُمنع الخروج من اللعبة للهروب من توقيف أو مواجهة أو نتيجة سيناريو قائم.</p></div>
+      <div class="rule"><span class="num">08</span><p>يُمنع كسر الشخصية أثناء السيناريو؛ استخدم القنوات المخصصة لطلب المساعدة أو تقديم شكوى.</p></div>
+      <div class="rule"><span class="num">09</span><p>بعد انتهاء سيناريو، لا تعد للانتقام اعتماداً على أحداث لا تتذكرها شخصيتك وفق قواعد السيرفر.</p></div>
+    </section>
+
+    <section class="section" id="police" data-section>
+      <div class="section-head"><div class="section-icon">03</div><div><h2>قوانين الشرطة والمنظمات</h2><div class="section-sub">الرتب والانضباط والمسؤولية</div></div></div>
+      <div class="rule"><span class="num">01</span><p>يجب على أفراد الجهات الرسمية الالتزام بالزي والمركبات والصلاحيات المعتمدة لرتبهم.</p></div>
+      <div class="rule"><span class="num">02</span><p>يُمنع استغلال الرتبة أو المعدات أو المعلومات الرسمية لتحقيق منفعة شخصية أو مضايقة لاعب.</p></div>
+      <div class="rule"><span class="num">03</span><p>يجب أن يكون التوقيف والتفتيش واستخدام القوة مبنياً على سبب واضح داخل RP، وبما يتناسب مع الموقف.</p></div>
+      <div class="rule"><span class="num">04</span><p>يُمنع تزوير الأدلة أو تلفيق التهم أو إطلاق سراح موقوف مقابل منفعة شخصية خارج الأنظمة المعتمدة.</p></div>
+      <div class="rule"><span class="num">05</span><p>يلتزم أفراد المنظمات بتعليمات القيادة، ولا يحق للقائد تجاوز قوانين السيرفر أو فرض عقوبات خارج صلاحياته.</p></div>
+      <div class="rule"><span class="num">06</span><p>يجب توثيق التجاوزات المهمة ورفعها للمسؤول المختص، وعدم نشر معلومات العمليات في القنوات العامة.</p></div>
+      <div class="rule"><span class="num">07</span><p>التجنيد والترقيات وتغيير القيادة يتم عبر الإجراءات الرسمية المعتمدة من إدارة السيرفر.</p></div>
+    </section>
+
+    <section class="section" id="crime" data-section>
+      <div class="section-head"><div class="section-icon">04</div><div><h2>قوانين الإجرام</h2><div class="section-sub">سيناريوهات متوازنة دون تخريب اللعب</div></div></div>
+      <div class="rule"><span class="num">01</span><p>يجب وجود سبب وسيناريو واضح قبل بدء أي نشاط إجرامي داخل اللعبة؛ يُمنع الاعتداء العشوائي.</p></div>
+      <div class="rule"><span class="num">02</span><p>يُمنع استهداف لاعب بشكل متكرر أو منعه من اللعب لمجرد الخلاف الشخصي.</p></div>
+      <div class="rule"><span class="num">03</span><p>في حالات الرهائن، يجب أن يكون السيناريو منظماً، مع احترام عدد المشاركين والحدود التي تحددها الإدارة.</p></div>
+      <div class="rule"><span class="num">04</span><p>يُمنع استخدام رهينة وهمية أو متعاون متفق معه مسبقاً لكسب أفضلية غير عادلة.</p></div>
+      <div class="rule"><span class="num">05</span><p>لا يجوز بدء سيناريو عدائي في منطقة آمنة أو استغلال المناطق المحمية للهروب من العواقب.</p></div>
+      <div class="rule"><span class="num">06</span><p>احترم حدود عدد المشاركين وفترات الانتظار وشروط السيناريو المعلنة من إدارة السيرفر.</p></div>
+      <div class="rule"><span class="num">07</span><p>يُمنع التحالف أو تبادل المعلومات بطريقة تخالف نظام الفصائل أو قواعد التوازن المعتمدة.</p></div>
+    </section>
+
+    <section class="section" id="cars" data-section>
+      <div class="section-head"><div class="section-icon">05</div><div><h2>قوانين السيارات والمطاردات</h2><div class="section-sub">قيادة منطقية وسيناريوهات عادلة</div></div></div>
+      <div class="rule"><span class="num">01</span><p>قد السيارة بصورة واقعية، وتجنب القيادة المستحيلة أو القفزات غير المنطقية لمجرد الهروب.</p></div>
+      <div class="rule"><span class="num">02</span><p><strong>Fear Driving:</strong> راعِ سلامة شخصيتك عند السرعات العالية أو الحوادث الخطرة، ولا تتصرف كأن السيارة لا تتضرر.</p></div>
+      <div class="rule"><span class="num">03</span><p>يُمنع استخدام مركبة غير مناسبة للموقف أو منطقة وعرة بصورة غير منطقية للهروب من المطاردة.</p></div>
+      <div class="rule"><span class="num">04</span><p>يُمنع تبديل المركبة أو تغيير مظهرها فوراً أثناء المطاردة لتضليل الأطراف دون مبرر RP.</p></div>
+      <div class="rule"><span class="num">05</span><p>يُمنع إصلاح المركبة أو استدعاء مركبة جديدة أثناء مطاردة نشطة إذا كان ذلك يخالف نظام السيرفر.</p></div>
+      <div class="rule"><span class="num">06</span><p>استخدم المركبات الرسمية فقط إذا كانت رتبتك أو وظيفتك مخولة بذلك، ولا تنتحل مركبة جهة رسمية.</p></div>
+      <div class="rule"><span class="num">07</span><p>تُطبق شروط المطاردات والتصعيد التي تعلنها الإدارة؛ لا تُحوّل كل مخالفة مرورية إلى سيناريو عنيف.</p></div>
+    </section>
+
+    <section class="section" id="admin" data-section>
+      <div class="section-head"><div class="section-icon">06</div><div><h2>قوانين الإدارة والعقوبات</h2><div class="section-sub">الشفافية وحفظ الحقوق</div></div></div>
+      <div class="rule"><span class="num">01</span><p>تُراجع البلاغات عبر التذكرة الرسمية، ويُفضّل إرفاق تسجيل أو صورة واضحة مع ذكر الوقت والأطراف.</p></div>
+      <div class="rule"><span class="num">02</span><p>يُمنع إزعاج الإدارة برسائل متكررة أو فتح تذاكر متعددة للموضوع نفسه أثناء مراجعته.</p></div>
+      <div class="rule"><span class="num">03</span><p>يجب على الإداري التعامل بحياد، وعدم استخدام صلاحياته لمصلحة الأصدقاء أو ضد لاعب بسبب خلاف شخصي.</p></div>
+      <div class="rule"><span class="num">04</span><p>تتدرج العقوبة حسب نوع المخالفة وتكرارها وتأثيرها؛ وقد تشمل تنبيهاً أو سجناً إدارياً أو حظراً وفق لائحة السيرفر.</p></div>
+      <div class="rule"><span class="num">05</span><p>يحق للاعب الاعتراض بأدب عبر القنوات الرسمية، وتُراجع الأدلة المتاحة قبل اتخاذ القرار النهائي متى أمكن.</p></div>
+      <div class="rule"><span class="num">06</span><p>يُمنع تزوير الأدلة أو قصّها بقصد التضليل، وقد تؤدي إساءة استخدام نظام الشكاوى إلى عقوبة.</p></div>
+      <div class="rule"><span class="num">07</span><p>قرارات الإدارة يجب أن تستند إلى قواعد معلنة وأدلة مناسبة، مع مراعاة خطورة المخالفة وسجل اللاعب.</p></div>
+    </section>
+    <div class="empty" id="empty">ما لقيناش نتائج مطابقة لبحثك.</div>
+  </main>
+</div>
+<footer>
+  <div><strong>LIBYAN EMBASSY 3Q</strong></div>
+  <div>القوانين وُضعت لضمان تجربة RP عادلة ومحترمة للجميع.</div>
+</footer>
+<button class="backtop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="العودة للأعلى">↑</button>
+<script>
+  document.getElementById('updated').textContent = new Date().toLocaleDateString('ar-LY');
+  const search = document.getElementById('search');
+  const sections = [...document.querySelectorAll('[data-section]')];
+  const empty = document.getElementById('empty');
+  search.addEventListener('input', () => {
+    const q = search.value.trim().toLocaleLowerCase('ar');
+    let visible = 0;
+    sections.forEach(section => {
+      const matches = !q || section.innerText.toLocaleLowerCase('ar').includes(q);
+      section.style.display = matches ? '' : 'none';
+      if (matches) visible++;
+    });
+    empty.style.display = visible ? 'none' : 'block';
+  });
+  const links = [...document.querySelectorAll('.side-links a')];
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) links.forEach(link => link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id));
+    });
+  }, {rootMargin:'-20% 0px -65% 0px'});
+  sections.forEach(section => observer.observe(section));
+</script>
+</body>
+</html>
